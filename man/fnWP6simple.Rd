@@ -82,6 +82,8 @@ Creates a simple platform trial design of class lPltfDsgn
 }
 \examples{
 
+library(simple)
+
 # Comparison IA1
 Bayes_Sup11 <- matrix(nrow = 2, ncol = 2)
 Bayes_Sup11[1,] <- c(0.00, 0.95)

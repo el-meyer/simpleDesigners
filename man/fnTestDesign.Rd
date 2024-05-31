@@ -41,7 +41,9 @@ Creates a simple platform trial design of class lPltfDsgn
 }
 \examples{
 
-lPltfDsgn <- 
+library(simple)
+
+lPltfDsgn <-
  fnTestDesign(
    effect_scenario = 3,
    recr_speed = 28,
@@ -51,7 +53,7 @@ lPltfDsgn <-
    ISA_start = 3,
    lag_units = 1
  )
- 
+
 ocs <- fnSimDsgnOC(lPltfDsgn = lPltfDsgn, nIter = 300, nCores = 7)
 
 out1 <- fnRunSingleTrialSim(lPltfDsgn, bRetainSnaps = TRUE)

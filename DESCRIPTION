@@ -1,12 +1,24 @@
 Package: simpleDesigners
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Additional designers for use with the "simple" package
+Version: 0.1
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+        c(
+        person(given = "Elias Laurin",
+           family = "Meyer",
+           role = c("aut", "cre"),
+           email = "elias@berryconsultants.net")
+           )
+Description: A modular software approach for simulating platform trials.
+License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
+Depends:
+    R (>= 3.3.0)
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    mvtnorm
+Imports:
+    simple
